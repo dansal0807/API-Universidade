@@ -1,8 +1,12 @@
 from rest_framework import viewsets, generics
 from Escola.models import Aluno, Curso, Matricula
-from Escola.serializer import AlunoSerializer, CursoSerializer, MatriculaSerializer, MatriculasListaSerializer, AlunosMatriculadosListaSerializer
+from Escola.serializer import AlunoSerializer, CursoSerializer, MatriculaSerializer, MatriculasListadasSerializer, AlunosMatriculadosListaSerializer
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import BasicAuthentication
+
+#A view é a grande apresentação de todos os dados reunidos. Aqui se fazem as relações entre Models e as URLs.
+#Note como "puxamos" tanto o models quanto o serializer aqui; isto indica a 'junção' entre estes dois elementos.
+#Aqui também é onde se "puxa" o serializer que será encaminhado para as URLs.
 
 class AlunosViewSet(viewsets.ModelViewSet):
     """ Exibindo todos os alunos e alunas """
@@ -33,7 +37,7 @@ class ListaViewSet(generics.ListAPIView):
     def get_queryset(self):
         queryset = Matricula.objects.filter(aluno_id = self.kwargs['pk']) #aluno_id é uma variável criada, em que busca da classe Matrcula a pk (primary key)
         return queryset
-    serializer_class = MatriculasListaSerializer
+    serializer_class = MatriculasListadasSerializer
     #Abaixo colocarei a autenticação da API na seção das matrículas (de um curso) de um aluno:
     authentication_class = [BasicAuthentication]
     permission_classes = [IsAuthenticated]

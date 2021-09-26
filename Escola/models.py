@@ -1,5 +1,8 @@
 from django.db import models
 
+#note como o Model não 'puxa' nenhuma classe. Isto porque o Model é independente! Ele é a base que será
+#utilizada na views.
+
 class Aluno(models.Model):
     nome = models.CharField(max_length=30)
     rg = models.CharField(max_length=9)
