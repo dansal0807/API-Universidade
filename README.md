@@ -16,7 +16,7 @@ Curso X:
  - aluno 2
  - aluno 3
  
-E assim em diante...
+E assim em diante.
 
 Da mesma forma, também podemos visualizar os cursos que um aluno determinado está inscrito:
 
@@ -25,4 +25,6 @@ Aluno X:
  - curso 2
  - curso 3
  
-E assim em diante...
+E assim em diante.
+
+- Caso deseje utilizar o código em sua máquina, você necessita instanciar uma máquina virtual, estar com o python baixado e instalar o pacote djangorestframework.
