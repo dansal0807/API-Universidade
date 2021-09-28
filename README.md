@@ -27,4 +27,5 @@ Aluno X:
  
 E assim em diante.
 
-- Caso deseje utilizar o código em sua máquina, você necessita instanciar um ambiente virtual, estar com o python baixado e instalar o pacote djangorestframework.
+- Caso deseje utilizar o código em sua máquina, você necessita instanciar um ambiente virtual, estar com o python baixado e instalar o pacote djangorestframework. Após ser instalado, é preciso utilizar o comando "py manage.py runserver" no terminal (para o windows, para Linux e Mac, utiliza python ao invés de py).
+
