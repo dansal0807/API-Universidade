@@ -27,4 +27,4 @@ Aluno X:
  
 E assim em diante.
 
-- Caso deseje utilizar o código em sua máquina, você necessita instanciar uma máquina virtual, estar com o python baixado e instalar o pacote djangorestframework.
+- Caso deseje utilizar o código em sua máquina, você necessita instanciar um ambiente virtual, estar com o python baixado e instalar o pacote djangorestframework.
