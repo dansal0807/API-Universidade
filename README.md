@@ -1,3 +1,32 @@
+# University-API
+
+The purpose of this project is to implement the concepts learned through Clean Architecture. Additionally, it aims to present models and relationships between models in the REST model. My intention was to present a project that relates these concepts in a clear and explicit way.
+
+Regarding the project itself:
+
+We have two major models: Courses and Students. We also have enrollments, which serve as a way of relating courses and students. In addition to being able to view, modify, and add courses and students to our database, we can relate the two fields precisely through enrollments.
+
+Thus, we can view the students enrolled in a specific course:
+
+Course X:
+
+student 1
+student 2
+student 3
+And so on.
+
+Likewise, we can also view the courses in which a specific student is enrolled:
+
+Student X:
+
+course 1
+course 2
+course 3
+And so on.
+
+If you wish to use the code on your machine, you need to instantiate a virtual environment, have Python installed, and install the djangorestframework package. After installation, you need to use the command "py manage.py runserver" on the terminal (for Windows, for Linux and Mac, use Python instead of py).
+
+
 # API-Universidade
 
 Este projeto tem por intuito a implementação dos conceitos apreendidos pelo Clean Architecture. Além disso, ele busca apresenta modelos e relações entre modelos no modelo REST.
